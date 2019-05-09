@@ -10,7 +10,8 @@
                 <div class="list-reset">
                     <div class="task"
                         v-for="(task, $taskIndex) of column.tasks"
-                        :key="$taskIndex">
+                        :key="$taskIndex"
+                        @click="goToTask(task)">
                         <span class="">
                             {{ task.name }}
                         </span>
@@ -21,7 +22,8 @@
                 </div>
             </div>
         </div>
-        <div v-if="isTaskOpen" class="">
+        <div v-if="isTaskOpen" class=""
+            @click.self="close">
             <router-view/>
         </div>
     </div>
@@ -36,7 +38,22 @@ export default {
       'board'
     ]),
     isTaskOpen () {
-      return this.$router.name === 'task'
+      return this.$route.name === 'task'
+    }
+  },
+  methods: {
+    goToTask (task) {
+      this.$router.push({
+        name: 'task',
+        params: {
+          id: task.id
+        }
+      })
+    },
+    close () {
+      this.$router.push({
+        name: 'board'
+      })
     }
   }
 }
