@@ -21,6 +21,9 @@
                 </div>
             </div>
         </div>
+        <div v-if="isTaskOpen" class="">
+            <router-view/>
+        </div>
     </div>
 </template>
 
@@ -28,7 +31,14 @@
 import { mapState } from 'vuex'
 
 export default {
-  computed: mapState(['board'])
+  computed: {
+    ...mapState([
+      'board'
+    ]),
+    isTaskOpen () {
+      return this.$router.name === 'task'
+    }
+  }
 }
 </script>
 
