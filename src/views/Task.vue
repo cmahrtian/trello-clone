@@ -1,8 +1,8 @@
 <template>
     <div class="task-view">
-        <div class="task-modal">
-            {{ task.name }}
-        </div>
+      <div class="task-modal">
+          {{ task.name }}
+      </div>
     </div>
 </template>
 
@@ -22,10 +22,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .task-modal {
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 5px;
-        width: 50%;
-    }
+  .task-modal {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+  }
 </style>

@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div v-if="isTaskOpen" class=""
+        <div v-if="isTaskOpen"
             @click.self="close">
             <router-view/>
         </div>
@@ -43,6 +43,7 @@ export default {
   },
   methods: {
     goToTask (task) {
+      this.$store.dispatch('setTaskSelected')
       this.$router.push({
         name: 'task',
         params: {
