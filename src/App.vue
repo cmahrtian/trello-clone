@@ -11,7 +11,7 @@
 <style lang="sass">
 $desktop: 1025px !default;
 $widescreen: 1217px !default;
-@import "../node_modules/bulma/bulma.sass"
+@import "bulma/bulma.sass"
 </style>
 
 <style lang="scss">
