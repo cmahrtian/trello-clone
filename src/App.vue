@@ -13,9 +13,9 @@
 </style>
 
 <style lang="scss">
-html {
-  background-color: #FF87A4;
-}
+// html {
+//   background-color: #FF87A4;
+// }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
