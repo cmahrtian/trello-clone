@@ -6,8 +6,7 @@ $widescreen: 1216px !default;
 $fullhd: 1408 !default;
 
 @import '../../node_modules/bulma/bulma.sass';
-@import '../../node_modules/bulma/sass/utilities/_all.sass';
-@import '../../node_modules//bulma/sass/utilities/initial-variables.sass';
+@import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
 
 html {
     font-size: 15px;
