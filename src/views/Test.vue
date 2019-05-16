@@ -1,20 +1,26 @@
 <template>
-    <div class="columns is-multiline">
-        <div class="column is-half-tablet is-7-widescreen">
-            <div class="red"></div>
-        </div>
-        <div class="column is-half-tablet is-5-widescreen">
-            <div class="blue"></div>
-        </div>
-        <div class="column is-half-tablet is-4-desktop">
-            <div class="green"></div>
-        </div>
-        <div class="column is-half-tablet is-4-desktop">
-            <div class="yellow"></div>
-        </div>
-        <div class="column is-half-tablet is-4-desktop">
-            <div class="orange"></div>
-        </div>
+    <div class="columns is-variable is-multiline is-mobile is-2-mobile is-5-widescreen">
+      <div class="column is-half-mobile is-half-tablet">
+        <div class="red"></div>
+      </div>
+      <div class="column is-half-mobile is-half-tablet">
+        <div class="blue"></div>
+      </div>
+      <div class="column is-full-mobile is-half-tablet is-7-widescreen">
+          <div class="red"></div>
+      </div>
+      <div class="column is-full-mobile is-half-tablet is-5-widescreen">
+          <div class="blue"></div>
+      </div>
+      <div class="column is-full-mobile is-half-tablet is-4-desktop">
+          <div class="green"></div>
+      </div>
+      <div class="column is-full-mobile is-half-tablet is-4-desktop">
+          <div class="yellow"></div>
+      </div>
+      <div class="column is-full-mobile is-half-tablet is-4-desktop">
+          <div class="orange"></div>
+      </div>
     </div>
 </template>
 
