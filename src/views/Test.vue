@@ -1,5 +1,5 @@
 <template>
-    <div class="columns is-variable is-multiline is-mobile is-2-mobile is-5-widescreen">
+    <div class="columns is-variable is-multiline is-mobile is-2-mobile is-4-widescreen">
       <div class="column is-half-mobile is-half-tablet">
         <div class="red"></div>
       </div>
