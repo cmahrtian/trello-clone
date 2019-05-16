@@ -9,9 +9,7 @@
 </template>
 
 <style lang="sass">
-$desktop: 1025px !default;
-$widescreen: 1217px !default;
-@import "bulma/bulma.sass"
+
 </style>
 
 <style lang="scss">
