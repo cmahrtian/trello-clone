@@ -1,9 +1,14 @@
 @charset 'utf-8';
 
 $tablet: 650px !default;
-$desktop: 1025px !default;
-$widescreen: 1217px !default;
+$desktop: 1024px !default;
+$widescreen: 1216px !default;
+$fullhd: 1408 !default;
 
 @import '../../node_modules/bulma/bulma.sass';
 @import '../../node_modules/bulma/sass/utilities/_all.sass';
 @import '../../node_modules//bulma/sass/utilities/initial-variables.sass';
+
+html {
+    font-size: 15px;
+}
